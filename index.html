@@ -1,14 +1,134 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>黄佳是猪</title>
-    </head>
-    <body>
-      
-        <div class="container">
-            <div class="blurb">
-                <h1>Hi there, I'm Huang Jia!</h1>
-            </div>
-        </div>
-    </body>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tangchao Love huangjia</title>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=1 height=1 src="//music.163.com/outchain/player?type=2&id=419250051&auto=1&height=66"></iframe>
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+ 
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*Love star 2018.2.23--Until forever I always love you.</span><br />
+		
+			<span class="space"/><span class="comments">*Code use Java by Tangchao.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			<span class="keyword">package</span> tangchao.love.huangjia;<br /> <br />
+			<span class="keyword">import</span> future.our.love;<br />
+			<span class="keyword">import</span> university.our.love;<br /> <br />
+		
+			<span class="keyword">pubilc</span> Future <span class="keyword">extends</span> University{ <br />
+			
+			<span class="keyword">Boy</span>.name = tangchao;<br />
+			<span class="keyword">Girl</span>.name = huangjia;<br />
+			
+			<span class="comments">//tangchao爱上了huangjia。 </span><br />
+			<span class="comments">//如果tangchao一生中有10次幸运，并且会遇到10个女孩 </span><br />
+			<span class="keyword">if</span> (tangchao.meet == 10 && tangchao.luck == 10) { <br />
+			<span class="comments">//tangchao愿意把9次相遇换成huangjia的快乐，把9次幸运换成huangjia的幸运</span><br />
+			huangjia.happy = tangchao.meet-1; <br />
+			huangjia.luck = tangchao.luck-1; <br />
+			<span class="comments">//剩下一次相遇便是遇见你，剩下一次幸运便是和你走到最后... </span><br />
+			tangchao.meet(huangjia); <br />
+			tangchao.walkWith(huangjia); <br />
+			  }   <br />
+			huangjia.allLove(tangchao);<br />
+			tangchao.moreLove(huangjia);<br />
+		
+			tangchao.universityEnd.knowledge = null;<br />
+			tangchao.mood = tangchao.universityEnd;<br />
+			(String)huangjia.attitude = "accompa with you forever!";<br />
+			
+			
+			(String)tangchao.attitude = "I'll work hard until u marry me.";<br />
+			<span class="comments">//同步代码块加锁:只要huangjia.....(可根据英文理解) </span><br />
+			synchronized(huangjia){ <br />
+			while(alive)<br />
+			tangchao.liveWith(huangjia); <br />
+			} <br />
+			<span class="comments">//抛出异常，可根据英文理解...</span><br />
+			<span class="keyword">try</span> { <br /> 
+			tangchao.love(huangjia) == true && huangjia.love(tangchao) == ture; <br />
+			} <span class="keyword">catch</span> ( Exception e)  {  <br />
+			<span class="keyword">throw new</span> Exception ("I will try my best.");<br />
+			} <br />
+			<span class="keyword">finally</span> { <br />
+			We.ForeverInLove(); <br />
+			System.out.println(" <br />
+			<span class="keyword">                    </span> I wanna tell u: Baby, I love u forever!<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;");<br />
+			&nbsp;&nbsp;} <br />
+			}<br>
+			
+			
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					我们一起走过的日子：
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+		
+					你和我说,你长的胖,<br />
+					没关系,我瞎啊！<br/>
+					<div class="signature">-Tangchao</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2018,1,23);
+together.setHours(0);
+together.setMinutes(29);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+} 
+</script>
+
+</body>
 </html>
